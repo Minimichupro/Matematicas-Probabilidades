@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Matemático: Trivia de Probabilidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Pantalla de Juego -->
+    <div id="quiz-screen">
+        <h1>Desafío de Probabilidades</h1>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div class="meta-info">
+            <span id="question-number">Pregunta 1 de 10</span>
+            <span id="score-counter">Correctas: 0 | Incorrectas: 0</span>
+        </div>
+        <div id="topic" class="topic-badge">Tema</div>
+        <div id="question" class="question-text">Cargando pregunta...</div>
+        <div id="options" class="options-list"></div>
+        <div class="controls">
+            <button id="btn-next" class="btn-next" onclick="nextQuestion()">Siguiente Pregunta</button>
+        </div>
+    </div>
+
+    <!-- Pantalla de Resultados -->
+    <div id="results-screen" class="results-screen">
+        <h1>Ronda Completada</h1>
+        <div class="score-circle" id="final-ratio">0/10</div>
+        <p id="feedback-msg">¡Buen intento!</p>
+        <div class="summary-box">
+            <div class="summary-item">
+                <span>Respuestas Correctas:</span> 
+                <span id="res-correct" class="text-success">0</span>
+            </div>
+            <div class="summary-item">
+                <span>Respuestas Incorrectas:</span> 
+                <span id="res-incorrect" class="text-error">0</span>
+            </div>
+            <div class="summary-item">
+                <span>Efectividad:</span> 
+                <span id="res-percent" class="text-bold">0%</span>
+            </div>
+        </div>
+        <button class="btn-restart" id="btn-restart" onclick="startRound()">Jugar Otra Ronda (10 Nuevas)</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
