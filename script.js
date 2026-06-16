@@ -35,7 +35,7 @@ for (let i = 1; i <= 20; i++) {
     let pInter = (pA + pB - pUnion).toFixed(2);
     masterQuestions.push({
         topic: "Probabilidad de la Intersección P(A ∩ B)",
-        question: `[Ejercicio P(A ∩ B) #${i}] Dados dos sucesos compatibles A y B, donde se conoce algebraicamente que P(A) = ${pA.toFixed(2)}, P(B) = ${pB.toFixed(2)} y la probabilidad de la unión de ambos es P(A ∪ B) = ${pUnion.toFixed(2)}. Halle el valor exacto de la intersección P(A ∩ B) [Notación U invertida].`,
+        question: `[Ejercicio P(A ∩ B) #${i}] Dados dos sucesos compatibles A y B, donde se conoce algebraicamente que P(A) = ${pA.toFixed(2)}, P(B) = ${pB.toFixed(2)} y la probabilidad de la unión de ambos es P(A ∪ B) = ${pUnion.toFixed(2)}. Halle el valor exacto de la intersección P(A ∩ B).`,
         options: [pInter, (pA + pB).toFixed(2), "0.15", (pUnion - pA).toFixed(2)],
         answer: pInter
     });
